@@ -2,7 +2,7 @@
 title: Hexo中插入图片的通用方法
 date: 2019-09-08 21:50:50
 categories:
-- [Linux, Hexo]
+- [Tools, Hexo]
 tags:
 - Hexo
 ---
