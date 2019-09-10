@@ -274,21 +274,15 @@
       
         <p>摘要：通过修改permalink设置，可以只使用Markdown通用语法，使图片在atom编辑器、hexo首页、hexo文章页均正常显示。</p>
 <a id="more"></a>
-
 <p>默认情况下，<code>source</code> 和 <code>public</code> 文件夹的文件结构（忽略部分文件）为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public</span><br><span class="line">├── year</span><br><span class="line">│   └── month</span><br><span class="line">│       └── day</span><br><span class="line">│           └── title</span><br><span class="line">│               └── index.html</span><br><span class="line">├── images</span><br><span class="line">│   └── image.png</span><br><span class="line">└── index.html</span><br><span class="line"></span><br><span class="line">source</span><br><span class="line">├── images</span><br><span class="line">│   └── image.png</span><br><span class="line">└── _posts</span><br><span class="line">    └── title.md</span><br></pre></td></tr></table></figure>
-
 <p>对于少量图片，官方文档建议的方法放在 <code>source/images</code> 中，按照类似 <code>![](/images/image.png)</code> 的形式访问。</p>
 <p>考虑到以上方法无法在Atom中编辑时显示图片，尝试使用相对路径 <code>![](../images/image.png)</code> 。此时，查看首页图片的链接为 <code>http://yoursite.com/images/image.png</code> 可以正常显示，文章内图片的链接为 <code>http://yoursite.com/year/month/day/images/image.png</code> 无法正常显示。</p>
 <p>显然，只要修改文章 <code>permalink</code> 设置使相对路径可以指向图片正确位置即可。在  <code>_config.yml</code> 中找到</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year/:month/:day/:title/</span><br></pre></td></tr></table></figure>
-
-<p>修改为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year:month:day-:title/</span><br></pre></td></tr></table></figure>
-
+<p>修改为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year:month:day-:title/</span><br></pre></td></tr></table></figure></p>
 <p>重新生成博客，此时 <code>public</code> 文件夹的文件结构（忽略部分文件）变更为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public</span><br><span class="line">├── :year:month:day-:title</span><br><span class="line">│   └── index.html</span><br><span class="line">├── images</span><br><span class="line">│   └── image.png</span><br><span class="line">└── index.html</span><br></pre></td></tr></table></figure>
-
 <p>查看首页图片和文章内图片链接均为 <code>http://yoursite.com/images/image.png</code> 可以正常显示。</p>
 
     </div>
@@ -507,6 +501,8 @@
 
 
 
+
+  
 
   
 
