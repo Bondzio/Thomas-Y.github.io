@@ -5,6 +5,7 @@ categories:
 - [Tools, Markdown]
 tags:
 - Markdown
+mathjax: true
 ---
 
 摘要：Markdown标准语法；示例；使用技巧。
@@ -25,9 +26,20 @@ tags:
 - [9 表格](#9-表格)
 <!-- TOC END -->
 
-$\underbrace{xxx}$
+$\underbrace{xxx}$ $\underbrace{xxx}$
 
-$$ c = \sqrt{a^{2}+b_{xy}^{2} +e^{x}} $$
+$$
+\begin{align*}
+	c &= \boxed{\sqrt{a^{2}+b_{xy}^{2} +e^{x}}} \tag{1.1}\\
+	a &= \sqrt{s} \tag{1.2}
+\end{align*}
+$$
+
+$$
+\begin{gather*}
+	c = \boxed{\sqrt{a^{2}+b_{xy}^{2} +e^{x}}}
+\end{gather*}
+$$
 
 # 1 标题
 
@@ -101,7 +113,8 @@ $$ c = \sqrt{a^{2}+b_{xy}^{2} +e^{x}} $$
 	2. 第一项嵌套的第二个元素
 ```
 
-显示效果：  
+显示效果：
+
 * 第一项
 * 第二项
 * 第三项
