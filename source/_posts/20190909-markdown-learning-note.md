@@ -5,7 +5,6 @@ categories:
 - [Tools, Markdown]
 tags:
 - Markdown
-mathjax: true
 ---
 
 摘要：Markdown标准语法；示例；使用技巧。
@@ -25,21 +24,6 @@ mathjax: true
 - [8 图片](#8-图片)
 - [9 表格](#9-表格)
 <!-- TOC END -->
-
-$\underbrace{xxx}$ $\underbrace{xxx}$
-
-$$
-\begin{align*}
-	c &= \boxed{\sqrt{a^{2}+b_{xy}^{2} +e^{x}}} \tag{1.1}\\
-	a &= \sqrt{s} \tag{1.2}
-\end{align*}
-$$
-
-$$
-\begin{gather*}
-	c = \boxed{\sqrt{a^{2}+b_{xy}^{2} +e^{x}}}
-\end{gather*}
-$$
 
 # 1 标题
 
@@ -131,8 +115,6 @@ $$
 
 ## 代码片段
 
-段落上的一个函数或片段的代码可以用 `` ` `` 包起来。
-
 ```markdown
 `printf()` 函数
 ```
@@ -141,9 +123,6 @@ $$
 `printf()` 函数
 
 ## 代码块
-
-可以用 `` ``` ``
-包裹一段代码，并指定一种语言（也可以不指定）。
 
 ````markdown
 ```javascript
@@ -172,13 +151,11 @@ $(document).ready(function () {
 # 8 图片
 
 ```markdown
-![效果](../images/20190909-markdown-learning-note//8-effect.png)
+![效果](../images/20190909-markdown-learning-note/8-effect.png)
 ```
 
 显示效果：  
 ![效果](../images/20190909-markdown-learning-note/8-effect.png)
-
-注：在github中显示时，可以使用相对路径。
 
 # 9 表格
 
@@ -194,6 +171,4 @@ $(document).ready(function () {
 |:------ | ------:|:--------:|
 | 1      |      2 |    3     |
 
-注：在github中显示时,表格前后必须空一行。
-
-[回到顶部](#readme)
+注：为防止渲染问题,表格前后最好空一行。
