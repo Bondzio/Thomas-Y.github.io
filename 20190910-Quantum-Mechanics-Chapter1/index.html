@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="Thomas-Y&#39;s blog">
 <meta property="og:description" content="摘要：黑体辐射；光电效应；康普顿散射；波尔氢原子模型；Stern-Gerlach实验，角动量与自旋；德布罗意物质波。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T05:41:38.631Z">
+<meta property="og:updated_time" content="2019-09-12T06:19:35.403Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fall 2019 Quantum Mechanics Chapter1">
 <meta name="twitter:description" content="摘要：黑体辐射；光电效应；康普顿散射；波尔氢原子模型；Stern-Gerlach实验，角动量与自旋；德布罗意物质波。">
@@ -225,11 +225,19 @@
                 
               
 
-              <time title="Created: 2019-09-10 09:15:39 / Modified: 22:41:38" itemprop="dateCreated datePublished" datetime="2019-09-10T09:15:39-07:00">2019-09-10</time>
+              <time title="Created: 2019-09-10 09:15:39" itemprop="dateCreated datePublished" datetime="2019-09-10T09:15:39-07:00">2019-09-10</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-11 23:19:35" itemprop="dateModified" datetime="2019-09-11T23:19:35-07:00">2019-09-11</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -274,28 +282,46 @@
         <p>摘要：黑体辐射；光电效应；康普顿散射；波尔氢原子模型；Stern-Gerlach实验，角动量与自旋；德布罗意物质波。</p>
 <a id="more"></a>
 <p>本系列文档为完全基于《Quantum Mechnics》<sup><a href="#fn_1" id="reffn_1">1</a></sup>的学习笔记。</p>
-<h1 id="1-量子力学建立"><a href="#1-量子力学建立" class="headerlink" title="1 量子力学建立"></a>1 量子力学建立</h1><h2 id="1-1-黑体辐射"><a href="#1-1-黑体辐射" class="headerlink" title="1.1 黑体辐射"></a>1.1 黑体辐射</h2><p>Define <em>black body</em> which has properties:</p>
+<h1 id="1-The-origins-of-quantum-theory"><a href="#1-The-origins-of-quantum-theory" class="headerlink" title="1 The origins of quantum theory"></a>1 The origins of quantum theory</h1><h2 id="1-1-Black-body-radiation"><a href="#1-1-Black-body-radiation" class="headerlink" title="1.1 Black body radiation"></a>1.1 Black body radiation</h2><p>Define <strong><em>Absorptance</em></strong> $\alpha$ - fraction of incident radiation absorbed.</p>
+<p>Define $E_{b}$ - energy radiated per unit area per unit time.</p>
+<p>Define <strong><em>Black body</em></strong> which has properties:  </p>
 <ul>
-<li>$\alpha=1$ , where $\alpha$ - fraction of incident radiation absorbed.  </li>
-<li>$E_{b}=\sigma T^{4}$ , where $E_{b}$ - energy radiated per unit, $\sigma$ - the Stefan-Boltzmann constant</li>
+<li>$\alpha=1$   </li>
+<li>$E_{b}=\sigma T^{4}$ , where $\sigma$ - the Stefan-Boltzmann constant</li>
 </ul>
-<script type="math/tex; mode=display">\sigma=5.67 \times 10^{-8} \ \mathrm{kg} \ \mathrm{s}^{-3} \ \mathrm{K}^{-4}</script><h3 id="1-1-1-Kirchhoff’s-law2"><a href="#1-1-1-Kirchhoff’s-law2" class="headerlink" title="1.1.1 Kirchhoff’s law2"></a>1.1.1 Kirchhoff’s law<sup><a href="#fn_2" id="reffn_2">2</a></sup></h3><p>Kirchhoff’s law:  </p>
-<blockquote>
+<script type="math/tex; mode=display">\sigma=5.67 \times 10^{-8} \ \mathrm{J} \ \mathrm{s}^{-1} \ \mathrm{m}^{-2} \ \mathrm{K}^{-4}</script><p>Define <strong><em>Emissive power</em></strong> $e_{\lambda} = d E_{b} / d \lambda \approx \Delta E_{b} / \Delta \lambda$ - the energy radiated per unit area for a range of wavelengths of width $\Delta \lambda$ .</p>
+<h3 id="1-1-1-Kirchhoff’s-law2"><a href="#1-1-1-Kirchhoff’s-law2" class="headerlink" title="1.1.1 Kirchhoff’s law2"></a>1.1.1 Kirchhoff’s law<sup><a href="#fn_2" id="reffn_2">2</a></sup></h3><blockquote>
 <p>For a body of any arbitrary material emitting and absorbing thermal electromagnetic radiation at every wavelength in thermodynamic equilibrium, the ratio of the emissive power to the absorption coefficient is equal to a universal function only of radiative wavelength and temperature.</p>
 </blockquote>
-<p>Emissive power:  </p>
-<blockquote>
-<p>The power emitted per unit area at a given wavelength and temperature.</p>
-</blockquote>
-<p>Absorption coefficient:  </p>
-<blockquote>
-<p>The ratio of the absorbed to the incident power at a given wavelength and temperature.</p>
-</blockquote>
-<blockquote id="fn_1">
-<sup>1</sup>. Bransden, B. H., &amp; Joachain, C. J. (2000). Quantum Mechanics (2nd ed.). Harlow, England: Pearson/Prentice Hall.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
+<h3 id="1-1-2-Stefan–Boltzmann-law34"><a href="#1-1-2-Stefan–Boltzmann-law34" class="headerlink" title="1.1.2 Stefan–Boltzmann law34"></a>1.1.2 Stefan–Boltzmann law<sup><a href="#fn_3" id="reffn_3">3</a></sup><sup><a href="#fn_4" id="reffn_4">4</a></sup></h3><p> The total energy radiated per unit surface area of a black body across all wavelengths per unit time is only related to its temperature:</p>
+<script type="math/tex; mode=display">E_{b}=\sigma T^{4}</script><p>Prerequisite:  </p>
+<ul>
+<li>the first and second law of thermodynamic</li>
+<li>Maxwell’s electromagnetic theory</li>
+</ul>
+<p>Assumption:  </p>
+<ul>
+<li>A box is filled with black body radiation, of which one wall is a piston which is moved by the pressure of the radiation.</li>
+<li>According to classical electromagnetism, the pressure <em>P</em> is related to the energy density by $p=\frac{u}{3}$. This equation still holds for the radiation pressure.</li>
+</ul>
+<p>Define <strong>u</strong> - energy density</p>
+<p>Now we use the heat-energy balance equation $d U=T d S-p d V$ to obtain</p>
+<script type="math/tex; mode=display">T d S=d(u V)+P d V=u^{\prime}(T) V d T+u d V+\frac{1}{3} u d V=u^{\prime}(T) V d T+\frac{4}{3} u d V \ .</script><p>Dividing through by <em>T</em> and using the fact that <em>dS</em> is a complete differential</p>
+<script type="math/tex; mode=display">\frac{\partial}{\partial V}\left(\frac{u^{\prime}(T) V}{T}\right)=\frac{\partial}{\partial T}\left(\frac{4 u}{3 T}\right) \ ,</script><p>which simplifies, after some algebra, to $u^{\prime}(T)=4 u(T) / T$ , that is, $u(T) \propto T^{4}$ .</p>
+<p>Define <strong>n</strong> - number density</p>
+<p>Then we quote a result from kinetic theory, namely that the flux of particles striking a unit area of a container is</p>
+<script type="math/tex; mode=display">\Phi=\frac{1}{4} n\langle v\rangle=\frac{1}{4} n c \ ,</script><p>which is also the number of particles striking a unit area of a container per unit time. I have replaced <em>v</em> with <em>c</em> , and using the fact that power emitted is the flux times the energy per particle , we get</p>
+<script type="math/tex; mode=display">E_{b}=\frac{1}{4} n c \frac{u}{n}=\left(\frac{1}{4} c A \right) T^{4} \equiv \sigma T^{4} \ .</script><blockquote id="fn_1">
+<sup>1</sup>. Bransden, B. H., &amp; Joachain, C. J. (2000). Quantum Mechanics (2nd ed.). Harlow, England: Pearson/Prentice Hall.  <a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#8617;</a>
 </blockquote>
 <blockquote id="fn_2">
-<sup>2</sup>. Kirchhoff, G. (1860), Ueber das Verhältniss zwischen dem Emissionsvermögen und dem Absorptionsvermögen der Körper für Wärme und Licht. Ann. Phys., 185: 275-301. doi:10.1002/andp.18601850205. Translated by Guthrie, Kirchhoff, G. (1860). I. On the relation between the radiating and absorbing powers of different bodies for light and heat. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 20(130), 1–21. doi:10.1080/14786446008642901.<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+<sup>2</sup>. Kirchhoff, G. (1860), Ueber das Verhältniss zwischen dem Emissionsvermögen und dem Absorptionsvermögen der Körper für Wärme und Licht. Ann. Phys., 185: 275-301. doi:10.1002/andp.18601850205. Translated by Guthrie, Kirchhoff, G. (1860). I. On the relation between the radiating and absorbing powers of different bodies for light and heat. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 20(130), 1–21. doi:10.1080/14786446008642901.  <a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. Knizhnik, Kalman. Derivation of the Stefan–Boltzmann Law. Johns Hopkins University – Department of Physics &amp; Astronomy.  <a href="#reffn_3" title="Jump back to footnote [3] in the text."> &#8617;</a>
+</blockquote>
+<blockquote id="fn_4">
+<sup>4</sup>. Cardy, J. (2010). The ubiquitous ‘c’: from the Stefan–Boltzmann law to quantum information. Journal of Statistical Mechanics: Theory and Experiment, 2010(10), P10004.<a href="#reffn_4" title="Jump back to footnote [4] in the text."> &#8617;</a>
 </blockquote>
 
     </div>
@@ -387,7 +413,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-量子力学建立"><span class="nav-number">1.</span> <span class="nav-text">1 量子力学建立</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-黑体辐射"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 黑体辐射</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-Kirchhoff’s-law2"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.1 Kirchhoff’s law2</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-The-origins-of-quantum-theory"><span class="nav-text">1 The origins of quantum theory</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-Black-body-radiation"><span class="nav-text">1.1 Black body radiation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-1-Kirchhoff’s-law2"><span class="nav-text">1.1.1 Kirchhoff’s law2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-2-Stefan–Boltzmann-law34"><span class="nav-text">1.1.2 Stefan–Boltzmann law34</span></a></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
