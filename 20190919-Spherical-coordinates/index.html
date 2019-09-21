@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="摘要：修改转义符号的转义规则，解决语义冲突，使行内LaTeX公式正常渲染。">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="1 DefinitionFor Cartesian coordinates we’ll use the letter x, and for spherical coordinates we’ll use the letter r. The following should be self explanatory: \vec{\mathbf{p}}=\sum_i x_i \hat{\mathbf{x">
+<meta name="keywords" content="Mathematics,Spherical coordinates">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo-renderer-kramed行内渲染错误解决方法">
-<meta property="og:url" content="http://yoursite.com/20190910-hexo-renderer-kramed-bug-fix/index.html">
+<meta property="og:title" content="Spherical coordinates">
+<meta property="og:url" content="http://yoursite.com/20190919-Spherical-coordinates/index.html">
 <meta property="og:site_name" content="Thomas-Y&#39;s blog">
-<meta property="og:description" content="摘要：修改转义符号的转义规则，解决语义冲突，使行内LaTeX公式正常渲染。">
+<meta property="og:description" content="1 DefinitionFor Cartesian coordinates we’ll use the letter x, and for spherical coordinates we’ll use the letter r. The following should be self explanatory: \vec{\mathbf{p}}=\sum_i x_i \hat{\mathbf{x">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T06:11:37.254Z">
+<meta property="og:updated_time" content="2019-09-21T21:30:25.608Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo-renderer-kramed行内渲染错误解决方法">
-<meta name="twitter:description" content="摘要：修改转义符号的转义规则，解决语义冲突，使行内LaTeX公式正常渲染。">
-  <link rel="canonical" href="http://yoursite.com/20190910-hexo-renderer-kramed-bug-fix/">
+<meta name="twitter:title" content="Spherical coordinates">
+<meta name="twitter:description" content="1 DefinitionFor Cartesian coordinates we’ll use the letter x, and for spherical coordinates we’ll use the letter r. The following should be self explanatory: \vec{\mathbf{p}}=\sum_i x_i \hat{\mathbf{x">
+  <link rel="canonical" href="http://yoursite.com/20190919-Spherical-coordinates/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>hexo-renderer-kramed行内渲染错误解决方法 | Thomas-Y's blog</title>
+  <title>Spherical coordinates | Thomas-Y's blog</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -197,7 +197,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/20190910-hexo-renderer-kramed-bug-fix/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/20190919-Spherical-coordinates/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Thomas-Y">
@@ -209,7 +209,7 @@
       <meta itemprop="name" content="Thomas-Y's blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">hexo-renderer-kramed行内渲染错误解决方法
+        <h1 class="post-title" itemprop="name headline">Spherical coordinates
 
           
         </h1>
@@ -225,11 +225,19 @@
                 
               
 
-              <time title="Created: 2019-09-10 22:51:09 / Modified: 23:11:37" itemprop="dateCreated datePublished" datetime="2019-09-10T22:51:09-07:00">2019-09-10</time>
+              <time title="Created: 2019-09-19 14:58:20" itemprop="dateCreated datePublished" datetime="2019-09-19T14:58:20-07:00">2019-09-19</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-21 14:30:25" itemprop="dateModified" datetime="2019-09-21T14:30:25-07:00">2019-09-21</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -238,14 +246,14 @@
               </span>
               <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Academic/" itemprop="url" rel="index"><span itemprop="name">Academic</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Academic/Mathematics/" itemprop="url" rel="index"><span itemprop="name">Mathematics</span></a></span>
 
                 
                 
@@ -264,16 +272,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>摘要：修改转义符号的转义规则，解决语义冲突，使行内LaTeX公式正常渲染。</p>
-<a id="more"></a>
-<p>测试版本：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo: 3.9.0</span><br><span class="line">hexo-renderer-kramed: 0.1.4</span><br><span class="line">kramed: 0.5.6</span><br></pre></td></tr></table></figure>
-<p>在hexo根目录下，找到 <code>\node_modules\kramed\lib\rules\inline.js</code> ，第11行改为：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">escape</span>: <span class="regexp">/^\\([`*\[\]()#$+\-.!_&gt;])/</span></span><br></pre></td></tr></table></figure>
-<p>第20行修改为：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">em: <span class="regexp">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span></span><br></pre></td></tr></table></figure>
-<p>重新生成博客。</p>
-
+        <h1 id="1-Definition"><a href="#1-Definition" class="headerlink" title="1 Definition"></a>1 Definition</h1><p>For Cartesian coordinates we’ll use the letter <strong><em>x</em></strong>, and for spherical coordinates we’ll use the letter <strong><em>r</em></strong>. The following should be self explanatory:</p>
+<script type="math/tex; mode=display">\vec{\mathbf{p}}=\sum_i x_i \hat{\mathbf{x}}^i = \sum_k r_k \hat{\mathbf{r}}^k.</script><p>In Cartesian coordinates we have</p>
+<script type="math/tex; mode=display">d \vec{\mathbf{p}} =  \sum_i d  x_i \hat{\mathbf{x}}^i.</script><p>In general we should also have</p>
+<script type="math/tex; mode=display">d \vec{\mathbf{p}} =  \sum_{k} d  r_i \hat{\mathbf{r}}^i,</script><p>where the $\hat{\mathbf{r}}^i$ is the direction of $d  r_i$. So in general we define</p>
+<script type="math/tex; mode=display">\vec{\mathbf{r}}^k = \frac{\partial \vec{\mathbf{p}}}{\partial r_k}, \quad \hat{\mathbf{r}}^k = \frac{\vec{\mathbf{r}}^k}{\left\|\vec{\mathbf{r}}^k\right\|} = \frac{1}{h_k} \frac{\partial \vec{\mathbf{p}}}{\partial r_k},</script><p>where $h_{k} \equiv \left|\vec{\mathbf{r}}^k\right|$. Expanding in the x basis:</p>
+<script type="math/tex; mode=display">\hat{\mathbf{r}}^k = \frac{1}{h_k} \frac{\partial \vec{\mathbf{p}}}{\partial r_k} = \frac{1}{h_k} \frac{\partial}{\partial r_k} \sum_i x_i \hat{\mathbf{x}}^i =\sum_i \frac{1}{h_k} \frac{\partial x_i}{\partial r_k} \hat{\mathbf{x}}^i.</script><h1 id="2-Spherical-cooridinates"><a href="#2-Spherical-cooridinates" class="headerlink" title="2 Spherical cooridinates"></a>2 Spherical cooridinates</h1><p>First, for the coordinates convention, we have</p>
+<script type="math/tex; mode=display">(r, \theta, \phi) \rightarrow (x, y, z)=(r \sin \theta \cos \phi, r \sin \theta \sin \phi, r \cos \theta).</script><p>The definition of basis is</p>
+<script type="math/tex; mode=display">
+\vec{\mathbf e}_r = \frac{\partial\vec{\mathbf p}}{\partial r}, \quad
+\vec{\mathbf e}_\theta = \frac{\partial\vec{\mathbf p}}{\partial \theta}, \quad
+\vec{\mathbf e}_\phi = \frac{\partial\vec{\mathbf p}}{\partial \phi}</script><script type="math/tex; mode=display">
+h_r = \|\vec{\mathbf e}_r\| , \quad
+h_\theta = \|\vec{\mathbf e}_\theta\| , \quad
+h_\phi = \|\vec{\mathbf e}_\phi\|.</script><p>We have</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\vec{\mathbf e}_r &=\;( & \sin\theta\cos\phi&, & \sin\theta\sin\phi&, & \cos\theta) \\
+\vec{\mathbf e}_\theta &=\;( & r\cos\theta\cos\phi&, & r\cos\theta\sin\phi&, & -r\sin\theta) \\
+\vec{\mathbf e}_\phi &=\;( & -r\sin\theta\sin\phi&, & r\sin\theta\cos\phi&, & 0)
+\end{align}</script><script type="math/tex; mode=display">
+\begin{align}
+h_r^2 &= \|\vec{\mathbf e}_r\|^2 = \sin^2\theta(\cos^2\phi + \sin^2\phi) + \cos^2\theta &&= 1 \\
+h_\theta^2 &= \|\vec{\mathbf e}_\theta\|^2 = r^2\cos^2\theta(\cos^2\phi + \sin^2\phi) + r^2\sin\theta &&= r^2 \\
+h_\phi^2 &= \|\vec{\mathbf e}_\phi\|^2 = r^2\sin^2\theta(\sin^2\phi + \cos^2\phi) &&= r^2\sin^2\theta
+\end{align}</script><p>So</p>
+<script type="math/tex; mode=display">
+\begin{align}
+h_r &= 1 \\
+h_\theta &= r \\
+h_\phi &= r\sin\theta
+\end{align}</script><h1 id="3-Gradient"><a href="#3-Gradient" class="headerlink" title="3 Gradient"></a>3 Gradient</h1><p>The gradient in Cartesian coordinates is:</p>
+<script type="math/tex; mode=display">\vec\nabla f = \vec{\mathbf F} = \sum_i F_i \hat{\mathbf x}^i = \sum_i \frac{\partial f}{\partial x_i}\hat{\mathbf x}^i.</script><p>To find the $k$’th component in spherical coordinates($F’_ k$), use the dot product:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+F'_ k &= \mathbf{\vec F} \cdot \mathbf{\hat r}^k \\
+ &= \left(\sum_i \frac{\partial f}{\partial x_i}\mathbf{\hat x}^i\right) \cdot \left(\sum_j\frac{1}{h_k}\frac{\partial x_j}{\partial r_k}\mathbf{\hat x}^j\right) \\
+ &= \frac{1}{h_k}\sum_i \frac{\partial f}{\partial x_i}\frac{\partial x_i}{\partial r_k} \\
+ &= \frac{1}{h_k}\frac{\partial f}{\partial r_k}
+\end{align}</script><p>Therefore:</p>
+<script type="math/tex; mode=display">\vec\nabla f = \frac{\partial f}{\partial r}\mathbf{\hat e}_r + \frac{1}{r}\frac{\partial f}{\partial \theta}\mathbf{\hat e}_\theta + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\mathbf{\hat e}_\phi</script>
     </div>
 
     
@@ -288,7 +326,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/Mathematics/" rel="tag"># Mathematics</a>
+            
+              <a href="/tags/Spherical-coordinates/" rel="tag"># Spherical coordinates</a>
             
           </div>
         
@@ -298,8 +338,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/20190910-Quantum-Mechanics-Chapter1/" rel="next" title="Fall 2019 Quantum Mechanics Chapter1">
-                  <i class="fa fa-chevron-left"></i> Fall 2019 Quantum Mechanics Chapter1
+                <a href="/20190910-hexo-renderer-kramed-bug-fix/" rel="next" title="hexo-renderer-kramed行内渲染错误解决方法">
+                  <i class="fa fa-chevron-left"></i> hexo-renderer-kramed行内渲染错误解决方法
                 </a>
               
             </div>
@@ -307,10 +347,6 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/20190919-Spherical-coordinates/" rel="prev" title="Spherical coordinates">
-                  Spherical coordinates <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -359,6 +395,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-Definition"><span class="nav-text">1 Definition</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Spherical-cooridinates"><span class="nav-text">2 Spherical cooridinates</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Gradient"><span class="nav-text">3 Gradient</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -511,6 +549,56 @@
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   

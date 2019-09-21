@@ -191,6 +191,145 @@
   
   
   <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/20190919-Spherical-coordinates/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Thomas-Y">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Thomas-Y's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/20190919-Spherical-coordinates/" class="post-title-link" itemprop="url">Spherical coordinates</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              
+                
+              
+
+              <time title="Created: 2019-09-19 14:58:20" itemprop="dateCreated datePublished" datetime="2019-09-19T14:58:20-07:00">2019-09-19</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-21 14:30:25" itemprop="dateModified" datetime="2019-09-21T14:30:25-07:00">2019-09-21</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Academic/" itemprop="url" rel="index"><span itemprop="name">Academic</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Academic/Mathematics/" itemprop="url" rel="index"><span itemprop="name">Mathematics</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-Definition"><a href="#1-Definition" class="headerlink" title="1 Definition"></a>1 Definition</h1><p>For Cartesian coordinates we’ll use the letter <strong><em>x</em></strong>, and for spherical coordinates we’ll use the letter <strong><em>r</em></strong>. The following should be self explanatory:</p>
+<script type="math/tex; mode=display">\vec{\mathbf{p}}=\sum_i x_i \hat{\mathbf{x}}^i = \sum_k r_k \hat{\mathbf{r}}^k.</script><p>In Cartesian coordinates we have</p>
+<script type="math/tex; mode=display">d \vec{\mathbf{p}} =  \sum_i d  x_i \hat{\mathbf{x}}^i.</script><p>In general we should also have</p>
+<script type="math/tex; mode=display">d \vec{\mathbf{p}} =  \sum_{k} d  r_i \hat{\mathbf{r}}^i,</script><p>where the $\hat{\mathbf{r}}^i$ is the direction of $d  r_i$. So in general we define</p>
+<script type="math/tex; mode=display">\vec{\mathbf{r}}^k = \frac{\partial \vec{\mathbf{p}}}{\partial r_k}, \quad \hat{\mathbf{r}}^k = \frac{\vec{\mathbf{r}}^k}{\left\|\vec{\mathbf{r}}^k\right\|} = \frac{1}{h_k} \frac{\partial \vec{\mathbf{p}}}{\partial r_k},</script><p>where $h_{k} \equiv \left|\vec{\mathbf{r}}^k\right|$. Expanding in the x basis:</p>
+<script type="math/tex; mode=display">\hat{\mathbf{r}}^k = \frac{1}{h_k} \frac{\partial \vec{\mathbf{p}}}{\partial r_k} = \frac{1}{h_k} \frac{\partial}{\partial r_k} \sum_i x_i \hat{\mathbf{x}}^i =\sum_i \frac{1}{h_k} \frac{\partial x_i}{\partial r_k} \hat{\mathbf{x}}^i.</script><h1 id="2-Spherical-cooridinates"><a href="#2-Spherical-cooridinates" class="headerlink" title="2 Spherical cooridinates"></a>2 Spherical cooridinates</h1><p>First, for the coordinates convention, we have</p>
+<script type="math/tex; mode=display">(r, \theta, \phi) \rightarrow (x, y, z)=(r \sin \theta \cos \phi, r \sin \theta \sin \phi, r \cos \theta).</script><p>The definition of basis is</p>
+<script type="math/tex; mode=display">
+\vec{\mathbf e}_r = \frac{\partial\vec{\mathbf p}}{\partial r}, \quad
+\vec{\mathbf e}_\theta = \frac{\partial\vec{\mathbf p}}{\partial \theta}, \quad
+\vec{\mathbf e}_\phi = \frac{\partial\vec{\mathbf p}}{\partial \phi}</script><script type="math/tex; mode=display">
+h_r = \|\vec{\mathbf e}_r\| , \quad
+h_\theta = \|\vec{\mathbf e}_\theta\| , \quad
+h_\phi = \|\vec{\mathbf e}_\phi\|.</script><p>We have</p>
+<script type="math/tex; mode=display">
+\begin{align}
+\vec{\mathbf e}_r &=\;( & \sin\theta\cos\phi&, & \sin\theta\sin\phi&, & \cos\theta) \\
+\vec{\mathbf e}_\theta &=\;( & r\cos\theta\cos\phi&, & r\cos\theta\sin\phi&, & -r\sin\theta) \\
+\vec{\mathbf e}_\phi &=\;( & -r\sin\theta\sin\phi&, & r\sin\theta\cos\phi&, & 0)
+\end{align}</script><script type="math/tex; mode=display">
+\begin{align}
+h_r^2 &= \|\vec{\mathbf e}_r\|^2 = \sin^2\theta(\cos^2\phi + \sin^2\phi) + \cos^2\theta &&= 1 \\
+h_\theta^2 &= \|\vec{\mathbf e}_\theta\|^2 = r^2\cos^2\theta(\cos^2\phi + \sin^2\phi) + r^2\sin\theta &&= r^2 \\
+h_\phi^2 &= \|\vec{\mathbf e}_\phi\|^2 = r^2\sin^2\theta(\sin^2\phi + \cos^2\phi) &&= r^2\sin^2\theta
+\end{align}</script><p>So</p>
+<script type="math/tex; mode=display">
+\begin{align}
+h_r &= 1 \\
+h_\theta &= r \\
+h_\phi &= r\sin\theta
+\end{align}</script><h1 id="3-Gradient"><a href="#3-Gradient" class="headerlink" title="3 Gradient"></a>3 Gradient</h1><p>The gradient in Cartesian coordinates is:</p>
+<script type="math/tex; mode=display">\vec\nabla f = \vec{\mathbf F} = \sum_i F_i \hat{\mathbf x}^i = \sum_i \frac{\partial f}{\partial x_i}\hat{\mathbf x}^i.</script><p>To find the $k$’th component in spherical coordinates($F’_ k$), use the dot product:</p>
+<script type="math/tex; mode=display">
+\begin{align}
+F'_ k &= \mathbf{\vec F} \cdot \mathbf{\hat r}^k \\
+ &= \left(\sum_i \frac{\partial f}{\partial x_i}\mathbf{\hat x}^i\right) \cdot \left(\sum_j\frac{1}{h_k}\frac{\partial x_j}{\partial r_k}\mathbf{\hat x}^j\right) \\
+ &= \frac{1}{h_k}\sum_i \frac{\partial f}{\partial x_i}\frac{\partial x_i}{\partial r_k} \\
+ &= \frac{1}{h_k}\frac{\partial f}{\partial r_k}
+\end{align}</script><p>Therefore:</p>
+<script type="math/tex; mode=display">\vec\nabla f = \frac{\partial f}{\partial r}\mathbf{\hat e}_r + \frac{1}{r}\frac{\partial f}{\partial \theta}\mathbf{\hat e}_\theta + \frac{1}{r\sin\theta}\frac{\partial f}{\partial \phi}\mathbf{\hat e}_\phi</script>
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/20190910-hexo-renderer-kramed-bug-fix/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -332,7 +471,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-09-11 23:19:35" itemprop="dateModified" datetime="2019-09-11T23:19:35-07:00">2019-09-11</time>
+                <time title="Modified: 2019-09-17 15:53:43" itemprop="dateModified" datetime="2019-09-17T15:53:43-07:00">2019-09-17</time>
               </span>
             
           
@@ -776,7 +915,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -803,7 +942,9 @@
         
           
         
-        <span class="site-state-item-count">8</span>
+          
+        
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span>
         
       </div>
@@ -824,7 +965,11 @@
         
           
         
-        <span class="site-state-item-count">5</span>
+          
+        
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span>
         
       </div>
@@ -912,9 +1057,11 @@
   
     
       
+        
+      
     
       
-        
+    
       
     
       
